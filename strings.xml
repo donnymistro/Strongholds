@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Stronghold</string>
+    <string name="Reds">Red Team</string>
+    <string name="zero">0</string>
+    <string name="count">8</string>
+    <string name="Captures">Strongholds Taken</string>
+    <string name="Captured">Capture Stronghold</string>
+    <string name="Eliminated">Players Remaining</string>
+    <string name="Eliminate">Player Out!</string>
+    <string name="Reset">Reset</string>
+    <string name="Blues">Blue Team</string>
+</resources>

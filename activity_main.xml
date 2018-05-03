@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@color/red">
+
+            <TextView
+                android:id="@+id/red_Team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:text="@string/Reds"/>
+
+            <TextView
+                android:id="@+id/red_Team_Strongholds_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/zero"/>
+
+            <TextView
+                android:id="@+id/red_Team_Strongholds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="@string/Captures"/>
+
+            <Button
+                android:id="@+id/red_Team_Capture_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="14dp"
+                android:text="@string/Captured"
+                android:onClick="redCaptures"/>
+
+            <TextView
+                android:id="@+id/red_Team_Players_Eliminated_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/count"/>
+
+            <TextView
+                android:id="@+id/red_Team_Players_Eliminated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="@string/Eliminated"/>
+
+            <Button
+                android:id="@+id/red_Elimination_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Eliminate"
+                android:onClick="redEliminate"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@color/blue">
+
+            <TextView
+                android:id="@+id/blue_Team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:text="@string/Blues"/>
+
+            <TextView
+                android:id="@+id/blue_Team_Strongholds_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/zero"/>
+
+            <TextView
+                android:id="@+id/blue_Team_Strongholds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="@string/Captures"/>
+
+            <Button
+                android:id="@+id/blue_Team_Capture_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="14dp"
+                android:text="@string/Captured"
+                android:onClick="blueCaptures"/>
+
+            <TextView
+                android:id="@+id/blue_Team_Players_Eliminated_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/count"/>
+
+            <TextView
+                android:id="@+id/blue_Team_Players_Eliminated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="@string/Eliminated"/>
+
+            <Button
+                android:id="@+id/blue_Elimination_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Eliminate"
+                android:onClick="blueEliminate"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Reset"
+        android:onClick="reset"/>
+
+</RelativeLayout>
